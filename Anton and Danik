@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#include<iostream>
+ using namespace std;
+  int main(){
+   int n , sumA=0, sumD=0;
+   string AandD;
+   cin>>n;
+   cin>>AandD;
+for (auto c:AandD)
+    if (c=='A'){
+        sumA++;
+    }
+    else {
+        sumD++;
+    }
+ if (sumA>sumD){
+
+   cout<<"Anton"<<endl;
+}
+else if(sumA<sumD){
+    cout<<"Danik"<<endl;
+}
+else{
+    cout<<"Friendship"<<endl;
+}
+return 0;
+}
