@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+int n,i, num, pol=0, isu=0;
+cin>>n;
+for(i=1; i<=n; i++){
+    cin>>num;
+    (num==-1)? (pol>0)? pol-- : isu++ : pol+=num;
+}
+cout<<isu<<endl;
+return 0;
+}
