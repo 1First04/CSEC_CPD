@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    map<int, int> box;
+    cin>>box[1]>>box[2]>>box[3]>>box[4];
+    string pro;
+    cin>>pro;
+    int count=0, i;
+    for(i=0; i< pro.size(); i++){
+     count+=box[pro[i]-48];
+    }
+    cout<<count<<endl;
+return 0;}
